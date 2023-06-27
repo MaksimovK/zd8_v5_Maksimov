@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTaskActivity"
+    android:background="@color/green">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить задачу"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="23dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginStart="120dp"
+            android:background="@drawable/back_button"
+            android:onClick="BackButton"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:hint="Title" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <EditText
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/etDate"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:hint="Date"
+        android:onClick="DateClick"/>
+
+    <EditText
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/etTime"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="75dp"
+        android:layout_width="132dp"
+        android:layout_height="32dp"
+        android:hint="Time"
+        android:onClick="TimeClick"/>
+
+</LinearLayout>
+
+
+    <EditText
+        android:background="@drawable/edit_text_background"
+        android:id="@+id/etDescription"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:hint="Description" />
+
+    <Button
+        android:id="@+id/btnSaveTask"
+        android:background="@drawable/rounded_button_background"
+        android:textColor="@color/white"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="75dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Записать задачу"
+        android:onClick="onSaveTaskClicked" />
+
+</LinearLayout>

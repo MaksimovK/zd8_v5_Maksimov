@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">zd8_v5</string>
+    <string name="profile">Профиль пользователя</string>
+    <string name="register">Регистрация</string>
+    <string name="sigIn">Войти</string>
+    <string name="sigInNot">Вход не выполнен</string>
+</resources>
